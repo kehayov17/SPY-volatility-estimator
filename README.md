@@ -4,7 +4,7 @@ This is a project for estimating SPY future volatility using 2 different methods
 
 ## EGARCH
 
-The first method is using EGARCH.You can set start and end dates for the historical data , but keep in mind that for garch models atleast a 1000 data points are recommended(in this case meaning atleast a 1000 days of historical data).We are using EGARCH instead of GARCH because it more accurately captures the key characteristics of financial return volatility — especially asymmetry and leverage effects.
+The first method is using EGARCH.You can set start and end dates for the historical data , but keep in mind that for garch models atleast a 1000 data points are recommended(in this case meaning atleast a 1000 days of historical data).We are using EGARCH instead of GARCH because it more accurately captures the key characteristics of volatility — asymmetry and leverage effects.
 
 In financial markets, negative shocks (e.g., price drops) often increase volatility more than positive shocks of the same magnitude. This behavior is known as the leverage effect.
 Standard GARCH assumes that volatility responds symmetrically to past shocks, meaning it treats positive and negative returns the same when updating volatility.
