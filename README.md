@@ -15,6 +15,8 @@ Better fits empirical data for assets like equities or ETFs.
 
 When you exeecute the script it will print out the next day forecasted volatiltiy along with a summary for the model:
 <img width="631" alt="Screenshot 2025-06-20 at 16 35 29" src="https://github.com/user-attachments/assets/d3d9ae4c-a4fe-403f-8199-7ed7dbba1025" />
+
+
 Mean=0
 We assume no deterministic trend (mean=0)
 
