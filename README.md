@@ -18,22 +18,27 @@ When you exeecute the script it will print out the next day forecasted volatilti
 
 
 Mean=0
+
 We assume no deterministic trend (mean=0)
 While the S&P 500 has an upward price trend, volatility models like EGARCH operate on returns, not prices.
 Returns are usually stationary (they fluctuate around a relatively stable mean), while prices are non-stationary. For simplicity and to focus purely on modeling volatility, we often assume the mean of returns is zero — that is, there's no consistent predictable return on a daily basis.
 
 Distribution: Normal
+
 Assumes residuals follow a normal distribution. (Can be changed to t-distribution for fat tails.)
 
 Dep. Variable	
+
 The series being modeled — here, the log returns of SPY.
 
 Log-Likelihood
+
 Higher values imply a better model fit.
 
 AIC & BIC	Information criteria — lower is better. Used for model comparison.
 
 No. Observations
+
 Number of data points used (1297 daily returns).
 
 omega (ω)	Constant term in the variance equation. Sets the long-run average variance.
@@ -42,6 +47,7 @@ beta[1] (β)	Persistence of past volatility. Closer to 1 = longer memory.
 
 
 R^2 = 0.000
+
 This is not important for volatility models. GARCH-type models focus on predicting variance (not the mean), so R^2 isn't meaningful.
 
 The model tells us that SPY volatility has a low but stable base level (omega),reacts quickly to shocks in the market (alpha),and stays elevated for a long time after a shock (beta).
