@@ -15,3 +15,33 @@ Better fits empirical data for assets like equities or ETFs.
 
 When you exeecute the script it will print out the next day forecasted volatiltiy along with a summary for the model:
 <img width="631" alt="Screenshot 2025-06-20 at 16 35 29" src="https://github.com/user-attachments/assets/d3d9ae4c-a4fe-403f-8199-7ed7dbba1025" />
+Mean=0
+We assume no deterministic trend (mean=0)
+
+Distribution: Normal
+Assumes residuals follow a normal distribution. (Can be changed to t-distribution for fat tails.)
+
+Dep. Variable	
+The series being modeled — here, the log returns of SPY.
+
+Log-Likelihood
+Higher values imply a better model fit.
+
+AIC & BIC	Information criteria — lower is better. Used for model comparison.
+
+No. Observations
+Number of data points used (1297 daily returns).
+
+omega (ω)	Constant term in the variance equation. Sets the long-run average variance.
+alpha[1] (α)	Measures the reaction to new shocks in volatility. Higher = more reactive.
+beta[1] (β)	Persistence of past volatility. Closer to 1 = longer memory.
+
+
+R^2 = 0.000
+This is not important for volatility models. GARCH-type models focus on predicting variance (not the mean), so R^2 isn't meaningful.
+
+The model tells us that SPY volatility has a low but stable base level (omega),reacts quickly to shocks in the market (alpha),and stays elevated for a long time after a shock (beta).
+This is exactly the kind of behavior we see in financial time series like SPY: volatility spikes suddenly and fades gradually.
+
+
+## YANG-ZHANG Volatility estimator
