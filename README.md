@@ -19,9 +19,9 @@ When you exeecute the script it will print out the next day forecasted volatilti
 
 Mean=0
 
-We assume no deterministic trend (mean=0)
-While the S&P 500 has an upward price trend, volatility models like EGARCH operate on returns, not prices.
-Returns are usually stationary (they fluctuate around a relatively stable mean), while prices are non-stationary. For simplicity and to focus purely on modeling volatility, we often assume the mean of returns is zero — that is, there's no consistent predictable return on a daily basis.
+We assume no deterministic trend (mean=0).
+While it uis well known that the S&P 500 has an upward price trend, volatility models like EGARCH operate on returns, not prices.
+Returns are usually stationary (they fluctuate around a relatively stable mean), while prices are non-stationary. For simplicity and to focus purely on modeling volatility, we will assume the mean of returns is zero — that is, there's no consistent predictable return on a daily basis.
 
 Distribution: Normal
 
