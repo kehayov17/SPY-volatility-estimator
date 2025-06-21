@@ -1,5 +1,5 @@
 # SPY-volatility-estimator
-This is a project for estimating SPY future volatility using 2 different methods.
+This is a project for predicting SPY future volatility and estimating historical volatility using 2 different methods.
 
 
 ## EGARCH
