@@ -3,7 +3,7 @@ import numpy as np
 from arch import arch_model
 
 # Load and clean the data
-df = pd.read_csv("spy.csv")
+df = pd.read_csv("../data/spy.csv")
 df["Date"] = pd.to_datetime(df["Date"])
 
 # Define date range and filter, using .copy() to avoid warning
