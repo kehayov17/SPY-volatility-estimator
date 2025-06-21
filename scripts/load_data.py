@@ -3,7 +3,7 @@ import pandas as pd
 from datetime import datetime
 
 # Load existing data
-df_existing = pd.read_csv("spy.csv")
+df_existing = pd.read_csv("../data/spy.csv")
 df_existing["Date"] = pd.to_datetime(df_existing["Date"])
 
 # Get last date in your CSV
