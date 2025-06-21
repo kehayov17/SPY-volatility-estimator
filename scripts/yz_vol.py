@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-df = pd.read_csv("spy.csv")
+df = pd.read_csv("../data/spy.csv")
 df["Date"] = pd.to_datetime(df["Date"])
 end_date = "2025-06-05"
 start_date = "2025-04-21"
