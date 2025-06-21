@@ -62,6 +62,17 @@ You can set the range for which you want to calculate the volatility by changing
 
 <img width="330" alt="Screenshot 2025-06-21 at 12 20 54" src="https://github.com/user-attachments/assets/a52e3e7e-eb17-4b05-a740-8547a947beb1" />
 
+When you run the script it will print out the YZ vol. for the given date range along with some of the parameters for the calculation.
+I also inlcuded a calculation for the close-to-close(realized vol.) for comparison.
+
+Here you can see how the YZ vol. is different from the realized because of overnight gaps and intraday highs and lows:
+
+<img width="356" alt="Screenshot 2025-06-21 at 12 24 13" src="https://github.com/user-attachments/assets/80dd1f60-eb65-4c2a-b10d-d58a90bb54a3" />
+
+
+## Loading the data
+
+The load_data.py script is responsible for updating the dataset (spy.csv) with the latest daily price data for the S&P 500 ETF (SPY) using the yfinance API.You don't need to change anything here .You can run it when you want to add new daily data to the spy.csv file.
 
 
 
