@@ -55,3 +55,13 @@ This is exactly the kind of behavior we see in financial time series like SPY: v
 
 
 ## YANG-ZHANG Volatility estimator
+
+This is an advanced and robust method for estimating historical volatility. It combines overnight volatility(close to next day open), open to close volatility and the Rogers-Satchell estimator(intraday high and low prices). This makes it more comprehensive and less biased than close-to-close(realized) volatility, Garman-Klaas and Rogers-Satchell estimators individually.
+
+You can set the range for which you want to calculate the volatility by changing the start_date and end_date variables. 
+
+<img width="330" alt="Screenshot 2025-06-21 at 12 20 54" src="https://github.com/user-attachments/assets/a52e3e7e-eb17-4b05-a740-8547a947beb1" />
+
+
+
+
