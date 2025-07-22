@@ -4,7 +4,7 @@ This is a project for predicting SPY future volatility and estimating historical
 
 ## EGARCH
 
-The first method is using EGARCH to forecast the next day volatility.You can set start and end dates for the historical data , but keep in mind that for garch models atleast a 1000 data points are recommended(in this case meaning atleast a 1000 days of historical data).We are using EGARCH instead of GARCH because it more accurately captures the key characteristics of volatility — asymmetry and leverage effects.
+The first method is using EGARCH to forecast the next day volatility.You can set start and end dates for the historical data , but keep in mind that for garch models atleast a 1000 data points are recommended(in this case meaning atleast a 1000 days of historical data).We are using EGARCH instead of GARCH because it more accurately captures the key characteristics of volatility.
 
 <img width="629" alt="Screenshot 2025-06-21 at 16 20 44" src="https://github.com/user-attachments/assets/ee443f31-f6c7-4677-aada-11b31b9fa2b3" />
 
@@ -19,21 +19,21 @@ When you exeecute the script it will print out the next day forecasted volatilti
 
 Mean=0
 
-We assume no deterministic trend (mean=0).
+We assume no deterministic trend(mean=0).
 While it uis well known that the S&P 500 has an upward price trend, volatility models like EGARCH operate on returns, not prices.
-Returns are usually stationary (they fluctuate around a relatively stable mean), while prices are non-stationary. For simplicity and to focus purely on modeling volatility, we will assume the mean of returns is zero — that is, there's no consistent predictable return on a daily basis.
+Returns are usually stationary (they fluctuate around a relatively stable mean), while prices are non stationary. For simplicity and to focus purely on modeling volatility, we will assume the mean of returns is zero  meaning there's no consistent predictable return on a daily basis.
 
 Distribution: Normal
 
 Assumes residuals follow a normal distribution. (Can be changed to t-distribution for fat tails.)
 
 Dep. Variable	
-The series being modeled — here, the log returns of SPY.
+The series being modeled . Here, the log returns of SPY.
 
 Log-Likelihood
 Higher values imply a better model fit.
 
-AIC & BIC	Information criteria — lower is better. Used for model comparison.
+AIC & BIC	Information criteria (lower is better). Used for model comparison.
 
 No. Observations
 Number of data points used (1297 daily returns).
